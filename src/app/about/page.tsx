@@ -98,7 +98,7 @@ const AboutPage = () => {
                   <div className="ml-6 flex-1">
                     <h3 className="text-2xl font-bold text-gray-800 mb-2">Chiến thắng Điện Biên Phủ</h3>
                     <p className="text-gray-600">
-                      Chiến thắng lịch sử "lừng lẫy năm châu, chấn động địa cầu", buộc thực dân Pháp phải ký 
+                      Chiến thắng lịch sử &ldquo;lừng lẫy năm châu, chấn động địa cầu&rdquo;, buộc thực dân Pháp phải ký 
                       Hiệp định Genève, công nhận độc lập, chủ quyền của Việt Nam.
                     </p>
                   </div>
@@ -214,7 +214,7 @@ const AboutPage = () => {
                   độc lập, thống nhất, dân giàu, nước mạnh, dân chủ, công bằng, văn minh.
                 </p>
                 <p className="text-yellow-300 font-bold text-xl text-center mt-8">
-                  "Tự hào Việt Nam - Hào hùng lịch sử - Vững bước tương lai"
+                  &ldquo;Tự hào Việt Nam - Hào hùng lịch sử - Vững bước tương lai&rdquo;
                 </p>
               </div>
             </div>

@@ -15,7 +15,7 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-red-300/40 via-red-400/40 to-red-500/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-red-900/90 via-red-800/85 to-red-900/90"></div>
         </div>
         
         {/* Background decorative elements - Cờ Việt Nam */}
@@ -181,7 +181,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <div className="text-sm text-red-600 font-semibold mb-2">1/9 - 30/9/2025</div>
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">Triển lãm ảnh "Việt Nam - 80 năm"</h3>
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">Triển lãm ảnh &ldquo;Việt Nam - 80 năm&rdquo;</h3>
                 <p className="text-gray-600 mb-4">Bảo tàng Lịch sử Quốc gia</p>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   Hơn 500 bức ảnh quý ghi lại những khoảnh khắc lịch sử đáng nhớ của dân tộc
@@ -243,7 +243,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-6xl mb-8">🇻🇳</div>
             <blockquote className="text-3xl md:text-4xl font-bold italic mb-6 leading-relaxed">
-              "Không có gì quý hơn độc lập, tự do"
+              &ldquo;Không có gì quý hơn độc lập, tự do&rdquo;
             </blockquote>
             <p className="text-xl text-yellow-300 font-semibold">- Chủ tịch Hồ Chí Minh -</p>
           </div>
