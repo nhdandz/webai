@@ -29,7 +29,7 @@ const AboutPage = () => {
           <div className="bg-gradient-to-r from-red-700 to-red-800 rounded-2xl p-10 text-white shadow-2xl text-center">
             <div className="text-6xl mb-6">🇻🇳</div>
             <blockquote className="text-2xl md:text-3xl font-bold italic mb-4 leading-relaxed">
-              "Không có gì quý hơn độc lập, tự do"
+                &ldquo;Không có gì quý hơn độc lập, tự do&rdquo;
             </blockquote>
             <p className="text-xl text-yellow-300 font-semibold">- Chủ tịch Hồ Chí Minh -</p>
           </div>
