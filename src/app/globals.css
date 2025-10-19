@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background-start-rgb: 255, 250, 245;
+  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 20, 20, 20;
+  --primary-rgb: 218, 37, 51;
+  --secondary-rgb: 255, 204, 0;
+  --accent-rgb: 237, 28, 36;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-start-rgb: 15, 15, 20;
+    --background-end-rgb: 20, 20, 30;
+    --foreground-rgb: 240, 240, 245;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-primary {
+    background-color: rgb(var(--primary-rgb));
+  }
+  
+  .bg-secondary {
+    background-color: rgb(var(--secondary-rgb));
+  }
+  
+  .text-primary {
+    color: rgb(var(--primary-rgb));
+  }
+  
+  .text-secondary {
+    color: rgb(var(--secondary-rgb));
+  }
+  
+  .border-primary {
+    border-color: rgb(var(--primary-rgb));
+  }
+}
+
+/* Animation cho sao vàng */
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+.star-animate {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+/* Animation cho gradient */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(218, 37, 51, 0.2);
 }
