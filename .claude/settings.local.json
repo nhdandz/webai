@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/University/aithucchien/demo1/my-app/src/app/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
