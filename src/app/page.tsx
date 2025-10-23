@@ -519,7 +519,7 @@ export default function Home() {
             <div className="text-5xl md:text-7xl mb-6 md:mb-8 star-animate inline-block">🇻🇳</div>
             <div className="w-20 h-1 bg-yellow-400 mx-auto mb-6 md:mb-8"></div>
             <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold italic mb-4 md:mb-6 leading-relaxed px-4">
-              "Không có gì quý hơn độc lập, tự do"
+              &quot;"Không có gì quý hơn độc lập, tự do"&quot;
             </blockquote>
             <div className="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full">
               <p className="text-lg md:text-xl text-yellow-300 font-semibold">- Chủ tịch Hồ Chí Minh -</p>
